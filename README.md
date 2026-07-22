@@ -1,4 +1,11 @@
-<h1>Desenvolvimento Web Avançado com PHP, Laravel e Vue.JS</h1>
+<div align="center">
+    <a href="https://github.com/monicaquintal" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" width="100px" align="left"/>  
+    </a> 
+    <h1>Desenvolvimento Web Avançado com PHP, Laravel e Vue.JS</h1>
+    <br><br>
+</div>
+
 
 <h3>Conteúdo</h3>
 
@@ -25,4 +32,4 @@
 <h3>Aulas</h3>
 
 - [Aulas 01 e 02: Introdução e Preparando-se para o desenvolvimento](./aulas/01e02.md)
-
+- [Aula 03: Introdução às Rotas, Controllers e Views](./aulas/03.md)
