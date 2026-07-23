@@ -3,9 +3,7 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" width="80px" align="left"/>  
     </a> 
     <h1>Desenvolvimento Web Avançado com PHP, Laravel e Vue.JS</h1>
-    <br><br>
 </div>
-
 
 <h3>Conteúdo</h3>
 
