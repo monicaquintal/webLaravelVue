@@ -1,9 +1,8 @@
 <div align="center">
     <a href="https://github.com/monicaquintal" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" width="100px" align="left"/>  
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" width="80px" align="left"/>  
     </a> 
     <h1>Desenvolvimento Web Avançado com PHP, Laravel e Vue.JS</h1>
-    <p>Prof. Jorge Sant Ana</p>
     <br><br>
 </div>
 
@@ -36,3 +35,4 @@
 - [Aula 02: Preparando-se para o desenvolvimento](./aulas/01e02.md)
 - [Aula 03: Introdução às Rotas, Controllers e Views](./aulas/03.md)
 - [Aula 04: Avançando com Rotas (Routes)](./aulas/04.md)
+- [Aula 05: Avançando com Controladores (Controllers) e Visualizações (Views)](./aulas/05.md)
