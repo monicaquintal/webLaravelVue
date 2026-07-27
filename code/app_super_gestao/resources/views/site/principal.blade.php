@@ -1,19 +1,8 @@
 @extends('site.layouts.basico')
 
-@section('conteudo')
-    <div class="topo">
-        <div class="logo">
-            <img src="{{ asset('img/logo.png') }}">
-        </div>
+@section('titulo', 'Home')
 
-        <div class="menu">
-            <ul>
-                <li><a href="{{ route('site.index') }}">Principal</a></li>
-                <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
-                <li><a href="{{ route('site.contato') }}">Contato</a></li>
-            </ul>
-        </div>
-    </div>
+@section('conteudo')
 
     <div class="conteudo-destaque">
         <div class="esquerda">
@@ -24,16 +13,16 @@
                     <img src="{{ asset('img/check.png') }}">
                     <span class="texto-branco">Gestão completa e descomplicada</span>
                 </div>
-                <div class="chamada">
-                    <img src="{{ asset('img/check.png') }}">
-                    <span class="texto-branco">Sua empresa na nuvem</span>
-                </div>
-            </div>
-
-            <div class="video">
-                <img src="{{ asset('img/player_video.jpg') }}">
+            <div class="chamada">
+                <img src="{{ asset('img/check.png') }}">
+                <span class="texto-branco">Sua empresa na nuvem</span>
             </div>
         </div>
+
+        <div class="video">
+            <img src="{{ asset('img/player_video.jpg') }}">
+        </div>
+    </div>
 
         <div class="direita">
             <div class="contato">
