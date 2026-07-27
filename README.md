@@ -29,17 +29,29 @@
 
 <h3>Aulas</h3>
 
-- [Aula 01: Introdução](./aulas/01e02.md)
+<details>
+    <summary><a href="./aulas/01e02.md">Aula 01: Introdução</a></summary>
+
     - Configurando o ambiente de desenvolvimento
     - Canais de comunicação
-- [Aula 02: Preparando-se para o desenvolvimento](./aulas/01e02.md)
+
+</details>
+
+<details>
+    <summary><a href="./aulas/01e02.md">Aula 02: Preparando-se para o desenvolvimento</a></summary>
+
     - Instalando o Visual Studio Code
     - Instalando o PHP
     - Instalando o Composer
     - Iniciando um projeto Laravel (Via Composer)
     - Instalando o Laravel Installer
     - Iniciando um projeto Laravel (Via Lavarel Installer)
-- [Aula 03: Introdução às Rotas, Controllers e Views](./aulas/03.md)
+    
+</details>
+
+<details>
+    <summary><a href="./aulas/03.md">Aula 03: Introdução às Rotas, Controllers e Views</a></summary>
+
     - Iniciando o projeto
     - Produtividade com Artisan Console
     - Rotas (Routes) - Introdução
@@ -48,7 +60,12 @@
     - Super Gestão - Implementando os controladores principal, sobre-nos e contato
     - Visualizações (Views) - Introdução
     - Super Gestão - Implementando as visualizações principal, sobre-nos e contato
-- [Aula 04: Avançando com Rotas (Routes)](./aulas/04.md)
+
+</details>
+
+<details>
+    <summary><a href="./aulas/04.md">Aula 04: Avançando com Rotas (Routes)</a></summary>
+
     - Enviando parâmetros
     - Parâmetros opcionais e valores padrões
     - Tratando parâmetros de rotas com expressões regulares
@@ -58,7 +75,12 @@
     - Nomeando rotas
     - Redirecionamento de rotas
     - Rota de contingência (fallback)
-- [Aula 05: Avançando com Controladores (Controllers) e Visualizações (Views)](./aulas/05.md)
+
+</details>
+
+<details>
+    <summary><a href="./aulas/05.md)">Aula 05: Avançando com Controladores (Controllers) e Visualizações (Views)</a></summary>
+
     - Encaminhando parâmetros da rota para o controlador
     - Encaminhando parâmetros do controlador para visualização
     - Sintaxe Blade
@@ -89,3 +111,61 @@
     - Entendendo o token @csrf
     - Blade - Componentes (@component)
     - Blade - Enviando parâmetros para componentes
+
+</details>
+
+<details>
+    <summary><a href="./aulas/06.md">Aula 06: Models, Migrations, Seeders, Factories, Banco de Dados, Tinker e Eloquent ORM</a></summary>
+
+    - Criando o Model SiteContato
+    - Implementando a migration SiteContato
+    - Dica - Resolvendo problema do php artisan migrate
+    - Configurando o BD SQLite e executando as migrations
+    - [WINDOWS] SGBD MySQL - Download e Instalação
+    - [LINUX] SGBD MySQL - Download e Instalação
+    - [OSX] SGBD MySQL - Download e Instalação
+    - Conectando-se ao SGBD MySQL via MySQL Workbench
+    - Criando a base de dados da aplicação e configurando a conexão (.env)
+    - Migration - Executando as migrações
+    - Migration - Criando e executando a migration fornecedores
+    - Migration - Adicionando campos a uma tabela
+    - Migration - Métodos up e down
+    - Migration - Modificadores Nullable e Default
+    - Migration - Adicionando chaves estrangeiras (Relacionamento um para um)
+    - Migration - Adicionando chaves estrangeiras (Relacionamento um para muitos)
+    - Migration - Adicionando chaves estrangeiras (Relacionamento muitos para muitos)
+    - Migration - Modificador After
+    - Migration - Comandos Status, Reset, Refresh e Fresh
+    - Entendendo o Eloquent ORM
+    - Tinker - Introdução
+    - Eloquent - Inserindo registros
+    - Eloquent - Ajustando o nome da tabela no Model para um correto ORM
+    - Eloquent - Inserindo registros com Create e Fillable
+    - Eloquent - Selecionando registros com all()
+    - Eloquent - Selecionando registros com find()
+    - Eloquent - Selecionando registros com where()
+    - Eloquent - Selecionando registros com whereIn() e whereNotIn()
+    - Eloquent - Selecionando registros com whereBetween() e whereNotBetween()
+    - Eloquent - Selecionando registros com dois ou mais Wheres
+    - Eloquent - Selecionando registros com orWhere()
+    - Eloquent - Selecionando registros com whereNull() e whereNotNull()
+    - Eloquent - Selecionando registros com base em parâmetros do tipo data e hora
+    - Eloquent - Selecionando registros com whereColumn()
+    - Eloquent - Selecionando registros aplicando precedência em operações lógicas
+    - Eloquent - Ordenando registros
+    - Eloquent - Introdução as Collections
+    - Eloquent - Collection first, last e reverse
+    - Eloquent - Collection toArray e toJson
+    - Eloquent - Collection pluck
+    - Eloquent - Um pouco mais sobre os métodos nativos dos objetos Collection
+    - Eloquent - Atualizando registros (save)
+    - Eloquent - Atualizando registros (fill e save)
+    - Eloquent - Atualizando registros (where e update)
+    - Eloquent - Deletando registros (delete e destroy)
+    - Eloquent - Deletando registros com SoftDelete
+    - Eloquent - Selecionando e restaurando registros deletados com SoftDelete
+    - Seeders parte 1
+    - Seeders parte 2
+    - Factories (semeando tabelas em massa com a dependência Faker)
+
+</details>
