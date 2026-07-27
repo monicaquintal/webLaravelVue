@@ -79,7 +79,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/05.md)">Aula 05: Avançando com Controladores (Controllers) e Visualizações (Views)</a></summary>
+    <summary><a href="./aulas/05.md">Aula 05: Avançando com Controladores (Controllers) e Visualizações (Views)</a></summary>
 
     - Encaminhando parâmetros da rota para o controlador
     - Encaminhando parâmetros do controlador para visualização
