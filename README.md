@@ -119,11 +119,8 @@
 
     - Criando o Model SiteContato
     - Implementando a migration SiteContato
-    - Dica - Resolvendo problema do php artisan migrate
     - Configurando o BD SQLite e executando as migrations
-    - [WINDOWS] SGBD MySQL - Download e Instalação
     - [LINUX] SGBD MySQL - Download e Instalação
-    - [OSX] SGBD MySQL - Download e Instalação
     - Conectando-se ao SGBD MySQL via MySQL Workbench
     - Criando a base de dados da aplicação e configurando a conexão (.env)
     - Migration - Executando as migrações
