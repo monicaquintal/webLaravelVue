@@ -166,3 +166,24 @@
     - Factories (semeando tabelas em massa com a dependência Faker)
 
 </details>
+
+<details>
+    <summary><a href="./aulas/07.md">Aula 07: Trabalhando com formulários</a></summary>
+
+    - Entendendo o objeto Request
+    - Gravando os dados do formulário no banco de dados
+    - Validação de campos obrigatórios (required)
+    - Validação de quantidades mínimas e máximas de caracteres (min e max)
+    - Repopulando o formulário (Request Old Input) parte 1
+    - Repopulando o formulário (Request Old Input) parte 2
+    - Ajustando o formulário de contato na rota principal
+    - Refactoring do projeto Super Gestão parte 1
+    - Refactoring do projeto Super Gestão parte 2
+    - Validação de campos e-mail
+    - Persistindo dados e redirecionando a rota
+    - Validação de campos únicos (unique)
+    - Customizando a apresentação dos erros de validação parte 1
+    - Customizando a apresentação dos erros de validação parte 2
+    - Customizando as mensagens de feedback de validação
+
+</details>
