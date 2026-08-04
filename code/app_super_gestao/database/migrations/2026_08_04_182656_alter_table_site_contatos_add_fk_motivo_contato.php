@@ -1,0 +1,46 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        // adicionando a coluna motivo_contatos_id na tabela site_contatos
+        Schema::table('site_contatos', function(Blueprint $table){
+            $table->unsignedBigInteger('motivo_contatos_id');
+        });
+
+        // atribuindo motivo_contato para a nova coluna motivo_contatos_id
+        /* método statement() permite executar uma query no BD, 
+        sem a necessidade de criar um modelo ou usar o Eloquent */
+        DB::statement('update site_contatos set motivo_contatos_id = motivo_contato');
+    
+        // criando a FK
+        Schema::table('site_contatos', function(Blueprint $table){
+            $table->foreign('motivo_contatos_id')->references('id')->on('motivo_contatos');
+            // removendo a coluna motivo_contatos
+            $table->dropColumn('motivo_contato');
+        });
+    }
+
+    public function down(): void
+    {
+        // criar a coluna motivo_contatos
+        Schema::table('site_contatos', function(Blueprint $table){
+            $table->integer('motivo_contato');
+            // removendo a FK
+            $table->dropForeign('site_contatos_motivo_contatos_id_foreign');
+        });
+
+        // atribuindo motivo_contatos_id para a coluna motivo_contato
+        DB::statement('update site_contatos set motivo_contato = motivo_contatos_id');
+    
+        // removendo a coluna motivo_contatos_id na tabela site_contatos
+        Schema::table('site_contatos', function(Blueprint $table){
+            $table->dropColumn('motivo_contatos_id');
+        });
+    }
+};
