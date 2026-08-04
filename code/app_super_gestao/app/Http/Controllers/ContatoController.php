@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\SiteContato;
+use App\Models\MotivoContato;
 
 class ContatoController extends Controller
 {
     public function contato(Request $request) {
 
-        // $contato = new SiteContato();
-        // $contato->create($request->all());
+        $motivo_contatos = MotivoContato::all();
 
-        return view('site.contato', ['titulo' => 'Contato (teste)']);
+        return view('site.contato', ['titulo' => 'Contato (teste)', 'motivo_contatos' => $motivo_contatos]);
     }
 
     public function salvar(Request $request) {
