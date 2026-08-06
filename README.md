@@ -187,3 +187,19 @@
     - Customizando as mensagens de feedback de validação
 
 </details>
+
+<details>
+    <summary><a href="./aulas/08.md">Aula 08: Middlewares</a></summary>
+
+    - Introdução aos Middlewares
+    - Criando meu primeiro middleware
+    - Criando o model LogAcesso e sua migration
+    - Implementando middlewares no método construtor dos controllers
+    - Implementando um middleware para todas as rotas
+    - Apelidando middlewares
+    - Encadeamento de middlewares (criando um middleware de autenticação)
+    - Adicionando middlewares a um grupo de rotas
+    - Passando parâmetros para o middleware
+    - Manipulando a resposta de uma requisição via middleware
+
+</details>
