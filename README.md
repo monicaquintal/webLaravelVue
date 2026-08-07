@@ -203,3 +203,16 @@
     - Manipulando a resposta de uma requisição via middleware
 
 </details>
+
+<details>
+    <summary><a href="./aulas/09.md">Aula 09: Autenticação de usuários (revisando e praticando os assuntos abordados)</a></summary>
+
+    - Implementando o formulário de Login
+    - Recebendo os parâmetros de usuário e senha
+    - Validando a existência do usuário e senha no Banco de Dados
+    - Redirect com envio de parâmetros - Apresentando mensagem de erro de login
+    - Iniciando a Superglobal Session e validando o acesso a rotas protegidas
+    - Implementando o menu de opções da área protegida da aplicação
+    - Adicionando a função logout
+
+</details>
