@@ -30,7 +30,7 @@
 <h3>Aulas</h3>
 
 <details>
-    <summary><a href="./aulas/01e02.md">Aula 01: Introdução</a></summary>
+    <summary><a href="./aulas/001e002.md">Aula 01: Introdução</a></summary>
 
     - Configurando o ambiente de desenvolvimento
     - Canais de comunicação
@@ -38,7 +38,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/01e02.md">Aula 02: Preparando-se para o desenvolvimento</a></summary>
+    <summary><a href="./aulas/001e002.md">Aula 02: Preparando-se para o desenvolvimento</a></summary>
 
     - Instalando o Visual Studio Code
     - Instalando o PHP
@@ -50,7 +50,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/03.md">Aula 03: Introdução às Rotas, Controllers e Views</a></summary>
+    <summary><a href="./aulas/003.md">Aula 03: Introdução às Rotas, Controllers e Views</a></summary>
 
     - Iniciando o projeto
     - Produtividade com Artisan Console
@@ -64,7 +64,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/04.md">Aula 04: Avançando com Rotas (Routes)</a></summary>
+    <summary><a href="./aulas/004.md">Aula 04: Avançando com Rotas (Routes)</a></summary>
 
     - Enviando parâmetros
     - Parâmetros opcionais e valores padrões
@@ -79,7 +79,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/05.md">Aula 05: Avançando com Controladores (Controllers) e Visualizações (Views)</a></summary>
+    <summary><a href="./aulas/005.md">Aula 05: Avançando com Controladores (Controllers) e Visualizações (Views)</a></summary>
 
     - Encaminhando parâmetros da rota para o controlador
     - Encaminhando parâmetros do controlador para visualização
@@ -115,7 +115,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/06.md">Aula 06: Models, Migrations, Seeders, Factories, Banco de Dados, Tinker e Eloquent ORM</a></summary>
+    <summary><a href="./aulas/006.md">Aula 06: Models, Migrations, Seeders, Factories, Banco de Dados, Tinker e Eloquent ORM</a></summary>
 
     - Criando o Model SiteContato
     - Implementando a migration SiteContato
@@ -168,7 +168,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/07.md">Aula 07: Trabalhando com formulários</a></summary>
+    <summary><a href="./aulas/007.md">Aula 07: Trabalhando com formulários</a></summary>
 
     - Entendendo o objeto Request
     - Gravando os dados do formulário no banco de dados
@@ -189,7 +189,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/08.md">Aula 08: Middlewares</a></summary>
+    <summary><a href="./aulas/008.md">Aula 08: Middlewares</a></summary>
 
     - Introdução aos Middlewares
     - Criando meu primeiro middleware
@@ -205,7 +205,7 @@
 </details>
 
 <details>
-    <summary><a href="./aulas/09.md">Aula 09: Autenticação de usuários (revisando e praticando os assuntos abordados)</a></summary>
+    <summary><a href="./aulas/009.md">Aula 09: Autenticação de usuários (revisando e praticando os assuntos abordados)</a></summary>
 
     - Implementando o formulário de Login
     - Recebendo os parâmetros de usuário e senha
@@ -214,5 +214,59 @@
     - Iniciando a Superglobal Session e validando o acesso a rotas protegidas
     - Implementando o menu de opções da área protegida da aplicação
     - Adicionando a função logout
+
+</details>
+
+<details>
+    <summary><a href="./aulas/010.md">Aula 10: Finalizando o projeto Super Gestão</a></summary>
+
+    - Implementando o cadastro de fornecedores parte 1
+    - Implementando o cadastro de fornecedores parte 2 (inclusão de registros)
+    - Implementando o cadastro de fornecedores parte 3 (pesquisa de registros)
+    - Implementando o cadastro de fornecedores parte 4 (atualização de registros)
+    - Paginação de registros
+    - Paginação de registros - Métodos count(), total(), firstItem() e lastItem()
+    - Implementando o cadastro de fornecedores parte 5 (remoção de registros)
+    - Controladores com resources
+    - Criando rotas associadas aos resources de um controlador
+    - Entendo os métodos HTTP Get, Post, Delete, Put e Patch
+    - Implementando o cadastro de produtos parte 1 (index)
+    - Implementando o cadastro de produtos parte 2 (create)
+    - Implementando o cadastro de produtos parte 3 (store)
+    - Implementando o cadastro de produtos parte 4 (validando dados)
+    - Implementando o cadastro de produtos parte 5 (show)
+    - Implementando o cadastro de produtos parte 6 (edit)
+    - Implementando o cadastro de produtos parte 7 (update)
+    - Implementando o cadastro de produtos parte 8 (delete)
+    - Modificando a forma de edição de registros parte 1
+    - Modificando a forma de edição de registros parte 2
+    - Relacionamentos 1x1, 1xN e NxN com Eloquent ORM
+    - Eloquent ORM 1 para 1 - Implementando produto detalhes parte 1
+    - Eloquent ORM 1 para 1 - Implementando produto detalhes parte 2
+    - Eloquent ORM 1 para 1 - Implementando produto detalhes parte 3
+    - Eloquent ORM 1 para 1 - Exibindo os detalhes do produto
+    - Eloquent ORM 1 para 1 - Estabelecendo relacionamento 1x1 (hasOne)
+    - Eloquent ORM 1 para 1 - Exibindo informações do produto (belongsTo)
+    - Eloquent ORM 1 para 1 - Utilizando hasOne e belongsTo com nomes não padronizados
+    - Extra - Lazy Loading vs Eager Loading parte 1
+    - Extra - Lazy Loading vs Eager Loading parte 2
+    - Eloquent ORM 1 para N - Criando o relacionamento entre Fornecedor e Produto
+    - Eloquent ORM 1 para N - Exibindo informações do fornecedor (belongsTo)
+    - Extra - Exibindo mais informações do fornecedor
+    - Eloquent ORM 1 para N - Estabelecendo relacionamento 1xN (hasMany)
+    - Eloquent ORM 1 para N - Associando fornecedores a produtos (Store e Update)
+    - Eloquent N para N - Implementando os requisitos para o relacionamento
+    - Criando os controladores e rotas para clientes, pedidos e pedidos produtos
+    - Implementando a tela de listagem de clientes
+    - Implementando a tela de cadastro de clientes
+    - Implementando a tela de listagem de pedidos
+    - Implementando a tela de cadastro de pedidos
+    - Implementando a tela de cadastro de produtos para um determinado pedido parte 1
+    - Eloquent ORM N para N - Implementando o relacionamento belongsToMany
+    - Eloquent ORM N para N - Praticando um pouco mais o relacionamento belongsToMany
+    - Relacionamento N para N - Colunas pivô da tabela de relacionamento (Pivot)
+    - Relacionamento N para N - Inserindo registros por meio do relacionamento
+    - Relacionamento N para N - Removendo o relacionamento
+    - Extra - Removendo o relacionamento pela PK de pedidos_produtos
 
 </details>

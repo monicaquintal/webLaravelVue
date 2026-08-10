@@ -8,14 +8,16 @@ Use App\Models\User;
 class LoginController extends Controller {
     public function index(Request $request, $erro = null) {
         if ($erro == 1) {
-            $mensagem = 'Usuário e/ou senha não existe!';
-        } else {
-            $mensagem = '';
+            $erro = 'Usuário e/ou senha não existe!';
+        } 
+
+        if ($erro == 2) {
+            $erro = 'Necessário realizar login para acessar a página!';
         }
 
         return view('site.login', [
             'titulo' => 'Login',
-            'erro' => $mensagem
+            'erro' => $erro
         ]);
     }
 
@@ -40,9 +42,6 @@ class LoginController extends Controller {
         $email = $request->get('usuario');
         $password = $request->get('senha');
 
-        echo "Usuário: $email | Senha: $password";
-        echo '<br>';
-
         // iniciar o Model User
         $user = new User();
 
@@ -52,9 +51,18 @@ class LoginController extends Controller {
         ->first();
 
         if(isset($usuario->name)) {
-            echo "Usuário encontrado: $usuario->name!";
+            session_start();
+            $_SESSION['nome'] = $usuario->name;
+            $_SESSION['email'] = $usuario->email;
+
+            return redirect()->route('app.home');
         } else {
             return redirect()->route('site.login', ['erro' => 1]);
         }
+    }
+
+    public function sair() {
+        session_destroy();
+        return redirect()->route('site.index');
     }
 }
