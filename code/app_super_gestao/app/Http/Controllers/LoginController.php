@@ -5,10 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 Use App\Models\User;
 
-class LoginController extends Controller
-{
-    public function index() {
-        return view('site.login', ['titulo' => 'Login']);
+class LoginController extends Controller {
+    public function index(Request $request, $erro = null) {
+        if ($erro == 1) {
+            $mensagem = 'Usuário e/ou senha não existe!';
+        } else {
+            $mensagem = '';
+        }
+
+        return view('site.login', [
+            'titulo' => 'Login',
+            'erro' => $mensagem
+        ]);
     }
 
     public function autenticar(Request $request) {
@@ -46,12 +54,7 @@ class LoginController extends Controller
         if(isset($usuario->name)) {
             echo "Usuário encontrado: $usuario->name!";
         } else {
-            echo "Usuário não existe!";
-
+            return redirect()->route('site.login', ['erro' => 1]);
         }
-
-        echo '<pre>';
-        print_r($usuario);
-        echo '</pre>';
     }
 }
