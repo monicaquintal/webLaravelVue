@@ -7,7 +7,7 @@ Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal'])
 Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class, 'sobreNos'])->name('site.sobrenos');
 
 Route::get('/contato', [\App\Http\Controllers\ContatoController::class,'contato'])->name('site.contato');
-Route::post('/contato', [\App\Http\Controllers\ContatoController::class,'salvar'])->name('site.contato');;
+Route::post('/contato', [\App\Http\Controllers\ContatoController::class,'salvar'])->name('site.contato');
 
 Route::get('/login/{erro?}', [\App\Http\Controllers\LoginController::class,'index'])->name('site.login');
 Route::post('/login', [\App\Http\Controllers\LoginController::class,'autenticar'])->name('site.login');
@@ -19,12 +19,15 @@ Route::middleware('autenticacao:padrao,admin')->prefix('/app')->group(function()
     
     Route::get('/fornecedor', [\App\Http\Controllers\FornecedoresController::class, 'index'])->name('app.fornecedor');
     Route::post('/fornecedor/listar', [\App\Http\Controllers\FornecedoresController::class, 'listar'])->name('app.fornecedor.listar');
+    Route::get('/fornecedor/listar', [\App\Http\Controllers\FornecedoresController::class, 'listar'])->name('app.fornecedor.listar');
     Route::get('/fornecedor/adicionar', [\App\Http\Controllers\FornecedoresController::class, 'adicionar'])->name('app.fornecedor.adicionar');
-
+    Route::post('/fornecedor/adicionar', [\App\Http\Controllers\FornecedoresController::class, 'adicionar'])->name('app.fornecedor.adicionar');
+    Route::get('/fornecedor/editar/{id}/{mensagem?}', [\App\Http\Controllers\FornecedoresController::class, 'editar'])->name('app.fornecedor.editar');
+    
     Route::get('/produto', [\App\Http\Controllers\ProdutoController::class, 'index'])->name('app.produto');
 });
 
-Route::get('/teste/{p1}/{p2}', [\App\Http\Controllers\TesteController::class, 'teste']) -> name ('teste');
+Route::get('/teste/{p1}/{p2}', [\App\Http\Controllers\TesteController::class, 'teste']) -> name ('site.teste');
 
 Route::fallback(function(){
     echo 'A rota acessada não existe! <a href= "'.route('site.index').'">Clique aqui</a> para ir para a página inicial :)';
