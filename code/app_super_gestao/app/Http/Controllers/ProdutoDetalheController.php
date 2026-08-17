@@ -31,14 +31,16 @@ class ProdutoDetalheController extends Controller
     }
 
  
-    public function edit(string $id)
+    public function edit(ProdutoDetalhe $produtoDetalhe)
     {
-        //
+        $unidades = Unidade::all();
+        return view('app.produto_detalhe.edit', ['produto_detalhe' => $produtoDetalhe, 'unidades' => $unidades]);
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, ProdutoDetalhe $produtoDetalhe)
     {
-        //
+        $produtoDetalhe->update($request->all());
+        echo 'Atualização realizada com sucesso!'; 
     }
 
     public function destroy(string $id)
