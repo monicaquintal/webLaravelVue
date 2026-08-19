@@ -5,6 +5,7 @@ use \App\Http\Middleware\LogAcessoMiddleware;
 use \App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\ProdutoDetalheController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\PedidoController;
 
 Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal'])->name('site.index')->middleware('log.acesso');
 Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class, 'sobreNos'])->name('site.sobrenos');
