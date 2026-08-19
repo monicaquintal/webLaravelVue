@@ -270,3 +270,66 @@
     - Extra - Removendo o relacionamento pela PK de pedidos_produtos
 
 </details>
+
+<details>
+    <summary><a href="#">Aula 11: Autenticação WEB (Session) e Bootstrap (CSS)</a></summary>
+</details>
+
+<details>
+    <summary><a href="#">Aula 12: Implementando o envio de e-mails e a exportação de arquivos XLSX, CSV e PDF</a></summary>
+</details>
+
+<details>
+    <summary><a href="./aulas/013.md">Aula 13: Vue.JS para iniciantes</a></summary>
+
+    - Introdução ao Vue.JS
+    - Instalando as ferramentas de desenvolvimento
+    - Iniciando o nosso primeiro front-end com Vue
+    - Primeiro App em Vue (instância de Vue e o double mustache)
+    - Explorando um pouco mais a propriedade data
+    - Methods - Adicionando os nossos primeiros métodos a instância Vue
+    - Methods - Recuperando atributos do data
+    - Methods - O contexto léxico das arrow functions e o conflito de nomes
+    - Diretiva V-Bind - Realizando o bind de atributos de tags HTML
+    - Diretiva V-Bind - Sintaxe sugar e a sobreposição/encadeamento de valores
+    - Utilizando expressões no data binding
+    - Diretiva V-On - Manipulando eventos
+    - Methods - Passando parâmetros para os métodos
+    - Diretiva V-On - Capturando os dados do evento ($event)
+    - Hands on - Praticando com data, methods, template string, v-bind e v-on
+    - Diretiva V-On - Implementando modificadores
+    - Selecionando elementos HTML e suas propriedades por ID
+    - Diretiva V-If - Renderização condicional de elementos HTML
+    - Diretiva V-Show - Exibição condicional de elementos HTML
+    - Diretiva V-HTML - Injetando elementos HTML
+    - Diretiva V-Text - Injetando textos
+    - Diretiva V-Once - Evitando que elementos HTML sejam renderizados novamente
+    - Diretiva V-For - Implementando laços de repetição parte 1
+    - Diretiva V-For - Implementando laços de repetição parte 2
+    - Renderização de listas com o atributo Key
+    - Diretiva V-For - Implementando laços de repetição parte 3
+    - Diretiva V-For - Implementando laços de repetição parte 4
+    - Trabalhando com a tag Template para renderização condicional e listas
+    - Trabalhando com propriedades computadas (computed) parte 1
+    - Trabalhando com propriedades computadas (computed) parte 2
+    - Diretiva V-Model - Sincronizando inputs com atributos (two-way-data binding)
+    - Diretiva V-Model - Praticando um pouco mais o two-way-data binding
+    - Trabalhando com propriedades observadoras (watch)
+
+</details>
+
+<details>
+    <summary><a href="#">Aula 14: APIs, WebServices e Rest</a></summary>
+</details>
+
+<details>
+    <summary><a href="#">Aula 15: Autenticação API - Autorização JWT (JSON Web Token)</a></summary>
+</details>
+
+<details>
+    <summary><a href="#">Aula 16: Aplicação Full Stack Back-end API Laravel com Front-end Vue.JS</a></summary>
+</details>
+
+<details>
+    <summary><a href="#">Aula 17: Armazenamento em memória com Redis (Laravel Cache)</a></summary>
+</details>
