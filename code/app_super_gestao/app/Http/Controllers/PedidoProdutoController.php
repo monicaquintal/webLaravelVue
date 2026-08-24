@@ -61,13 +61,14 @@ class PedidoProdutoController extends Controller
         //
     }
 
-    public function destroy(Pedido $pedido, Produto $produto)
+    // public function destroy(Pedido $pedido, Produto $produto)
+    public function destroy(PedidoProduto $pedidoProduto, $pedido_id)
     {
         // print_r($pedido->getAttributes());
         // echo '<hr>';
         // print_r($produto->getAttributes());
 
-        echo $pedido->id.' - '.$produto->id;
+        //echo $pedido->id.' - '.$produto->id;
 
         // método convencional:
         // PedidoProduto::where([
@@ -76,12 +77,13 @@ class PedidoProdutoController extends Controller
         // ])->delete();
 
         // método detach(): permite fazer o delete pelo relacionamento, através do belongsToMany
-        $pedido->produtos()->detach($produto->id);
+        // $pedido->produtos()->detach($produto->id);
         // lembrando que $produto_id já é uma info pertencente ao objeto instanciado
 
         // também seria possível remover o relacionamento por meio do objeto Produto:
         // $produto->pedidos()->detach($pedido->id);
 
-        return redirect()->route('pedido-produto.create', ['pedido' => $pedido->id]);
+        $pedidoProduto->delete();
+        return redirect()->route('pedido-produto.create', ['pedido' => $pedido_id]);
     }
 }
