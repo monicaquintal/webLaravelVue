@@ -272,7 +272,20 @@
 </details>
 
 <details>
-    <summary><a href="#">Aula 11: Autenticação WEB (Session) e Bootstrap (CSS)</a></summary>
+    <summary><a href="./aulas/011.md">Aula 11: Autenticação WEB (Session) e Bootstrap (CSS)</a></summary>
+
+    - Iniciando o projeto Controle de Tarefas
+    - [LINUX] Instalando o NodeJS e o NPM
+    - Instalando o Laravel UI
+    - Entendendo o pacote UI e iniciando a autenticação WEB nativa do Laravel
+    - Configurando a conexão com o banco de dados e executando as migrations padrões
+    - Registrando novos usuários e efetuando o login na aplicação
+    - Validando campos de confirmação (confirmed) e mudando regras de senhas
+    - Entendendo como a rota Home está protegida
+    - Criando o Model e o Controller para Tarefa
+    - Implementando o middleware auth
+    - Verificando se o usuário está logado dentro dos métodos do Controller
+
 </details>
 
 <details>
