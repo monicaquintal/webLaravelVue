@@ -289,7 +289,44 @@
 </details>
 
 <details>
-    <summary><a href="#">Aula 12: Implementando o envio de e-mails e a exportação de arquivos XLSX, CSV e PDF</a></summary>
+    <summary><a href="./aulas/012.md">Aula 12: Implementando o envio de e-mails e a exportação de arquivos XLSX, CSV e PDF</a></summary>
+    
+    - IMPORTANTE - Ajustando as configurações de acesso ao SMTP do Gmail
+    - Configurando o envio de e-mails (Reset Password) - Parte 1
+    - Criando um template de e-mail com Markdown Mailables
+    - Enviando e-mails
+    - Publicando e customizando o template de e-mail
+    - Configurando o envio de e-mails (Reset Password) - Parte 2
+    - Ajustando as políticas de senha no reset
+    - Verificação de e-mail (MustVerifyEmail)
+    - Customizando a view de verificação de e-mail
+    - Customizando a mensagem de verificação de e-mail
+    - Cadastrando novas tarefas
+    - Enviando um e-mail de cadastro de nova tarefa e exibindo os dados da tarefa
+    - Associando o usuário a tarefa
+    - Listando as tarefas cadastradas
+    - Implementando a paginação de registros de tarefas
+    - Modificando a rota home da aplicação (redirectTo)
+    - Atualizando registros de tarefas
+    - Validando se a tarefa pertence ao usuário antes de habilitar a edição
+    - Removendo registros de tarefas
+    - Melhorando a navegação
+    - Verificando na View se o usuário está ou não logado
+    - Instalando o pacote Laravel Excel
+    - Exportando um arquivo no formato XLSX com a relação de tarefas
+    - Refactoring do relacionamento entre Users e Tarefas
+    - Exportando um arquivo no formato CSV com a relação de tarefas
+    - Exportando um arquivo no formato PDF com a relação de tarefas
+    - Definindo títulos na exportação
+    - Corrigindo caracteres especiais em exportações CSV
+    - Manipulando os dados exportados linha por linha e formatando datas
+    - Instalando o pacote DOMPDF
+    - Exportando um arquivo no formato PDF com o DOMPDF parte 1
+    - Exportando um arquivo no formato PDF com o DOMPDF parte 2
+    - Adicionando suporte UTF-8, estilos CSS e quebras de páginas nas Views de PDF
+    - Laravel DOMPDF - Download vs Stream
+    - Laravel DOMPDF - Definindo o tipo de papel e a orientação da impressão
+ 
 </details>
 
 <details>
