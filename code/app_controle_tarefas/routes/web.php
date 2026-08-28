@@ -11,13 +11,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('tarefa', TarefaController::class);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
+    ->name('home')
+    ->middleware(['auth', 'verified']);
 
+Route::resource('tarefa', TarefaController::class)
+    ->middleware(['auth', 'verified']);
+    
 Route::get('/mensagem-teste', function() {
-    return new MensagemTesteMail();
-    // Mail::to('monica.zoom@hotmail.com')->send(new MensagemTesteMail());
-    // return 'E-mail enviado com sucesso!';
+    // return new MensagemTesteMail();
+    Mail::to('cursolaravelvue123@gmail.com')->send(new MensagemTesteMail());
+    return 'E-mail enviado com sucesso!';
 });
