@@ -4,12 +4,14 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Notifications\RedefinirSenhaNotification;
+use App\Notifications\VerificarEmailNotification;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+
 use Override;
 
 #[Fillable(['name', 'email', 'password'])]
@@ -36,5 +38,11 @@ class User extends Authenticatable implements MustVerifyEmail
     public function sendPasswordResetNotification($token)
     {
         $this->notify(new RedefinirSenhaNotification($token, $this->email, $this->name));
+    }
+
+    #[Override]
+    public function sendEmailVerificationNotification()
+    {
+        $this->notify(new VerificarEmailNotification($this->name));
     }
 }
