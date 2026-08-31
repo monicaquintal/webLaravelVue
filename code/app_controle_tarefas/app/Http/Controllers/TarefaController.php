@@ -33,8 +33,8 @@ class TarefaController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
         $tarefa = Tarefa::create($request->all());
+        // dd($tarefa);
         return redirect()->route('tarefa.show', ['tarefa' => $tarefa->id]);
     }
 
