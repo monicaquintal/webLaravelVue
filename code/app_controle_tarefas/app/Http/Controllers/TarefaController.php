@@ -19,7 +19,9 @@ class TarefaController extends Controller
      */
     public function index()
     {
-        return 'Chegamos até aqui';
+        $user_id = Auth::user()->id;
+        $tarefas = Tarefa::where('user_id', $user_id)->paginate(10);
+        return view('tarefa.index', ['tarefas' => $tarefas]);
     }
 
     /**
@@ -35,7 +37,9 @@ class TarefaController extends Controller
      */
     public function store(Request $request)
     {
-        $tarefa = Tarefa::create($request->all());
+        $dados = $request->all('tarefa', 'data_limite_conclusao');
+        $dados['user_id'] = Auth::user()->id;
+        $tarefa = Tarefa::create($dados);
         $destinatario = Auth::user()->email;
         Mail::to($destinatario)->send(new NovaTarefaMail($tarefa));
         return redirect()->route('tarefa.show', ['tarefa' => $tarefa->id]);
