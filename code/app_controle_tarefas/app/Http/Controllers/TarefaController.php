@@ -7,6 +7,8 @@ use App\Mail\NovaTarefaMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\TarefasExport;
 
 class TarefaController extends Controller
 {
@@ -58,7 +60,13 @@ class TarefaController extends Controller
      */
     public function edit(Tarefa $tarefa)
     {
-        //
+        $user_id = Auth::user()->id;
+
+        if($tarefa->user_id == $user_id){
+            return view('tarefa.edit', ['tarefa' => $tarefa]);
+        }
+
+        return view('acesso-negado');
     }
 
     /**
@@ -66,7 +74,12 @@ class TarefaController extends Controller
      */
     public function update(Request $request, Tarefa $tarefa)
     {
-        //
+        if(!$tarefa->user_id == Auth::user()->id){
+            return view('acesso-negado');
+        }
+
+        $tarefa->update($request->all());
+        return redirect()->route('tarefa.show', ['tarefa' => $tarefa->id]);
     }
 
     /**
@@ -74,6 +87,16 @@ class TarefaController extends Controller
      */
     public function destroy(Tarefa $tarefa)
     {
-        //
+
+        if(!$tarefa->user_id == Auth::user()->id){
+            return view('acesso-negado');
+        }
+        
+        $tarefa->delete();
+        return redirect()->route('tarefa.index');
+    }
+
+    public function exportacao() {
+        return Excel::download(new TarefasExport, 'lista_de_tarefas.xlsx');
     }
 }
