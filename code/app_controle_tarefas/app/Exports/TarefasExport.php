@@ -2,7 +2,8 @@
 
 namespace App\Exports;
 
-use App\Models\Tarefa;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
@@ -10,6 +11,8 @@ class TarefasExport implements FromCollection
 {
     public function collection(): Collection
     {
-        return Tarefa::all();
+        /** @var User $user */
+        $user = Auth::user();
+        return $user->tarefas()->get();
     }
 }
