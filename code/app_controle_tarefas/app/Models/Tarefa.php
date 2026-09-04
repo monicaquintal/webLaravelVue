@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
 
 class Tarefa extends Model
 {
@@ -12,6 +13,6 @@ class Tarefa extends Model
 
     public function user() {
         // belongsTo()
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo(User::class);
     }
 }
