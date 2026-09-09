@@ -18,19 +18,22 @@
     <script>
         const vm = new Vue({
             el:'#app', 
-            data: {},
+            data: {
+                n1: 10,
+                n2: 5
+            },
             methods: {
                 somar: function somar() { // sintaxe convencional (função nomeada)
-                    return 12 + 6;
+                    return this.n1 + this.n2;
                 },
                 subtrair: function(){ // função anônima
-                    return 12 - 6;
+                    return this.n1 - this.n2;
                 },
                 multiplicar: () => { // arrow function
-                    return 12 * 6;
+                    return this.n1 * this.n2;
                 },
                 dividir() { // método abreviado
-                    return 12 / 6;
+                    return this.n1 / this.n2;;
                 }
             } 
         }); 
