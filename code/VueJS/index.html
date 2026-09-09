@@ -6,36 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./vue.js"></script>
     <title>Document</title>
+
+    <style>
+        .rosa {
+            color: palevioletred;
+        }
+    </style>
+
 </head>
 <body>
     <div id="app">
-        Soma: {{ somar() }} <br>
-        Subtração: {{ subtrair() }} <br>
-        Multiplicação: {{ multiplicar() }} <br>
-        Divisão: {{ dividir() }}
+        <a :href="site">Site</a>
+        <p v-bind:class="cor">Entendendo a diretiva v-bind</p>
+        <input type="text" v-bind:placeholder="instrucaoDePreenchimento" v-bind:value="valor">
+        <input type="checkbox" v-bind:checked="check">
     </div> 
 
     <script>
         const vm = new Vue({
             el:'#app', 
             data: {
-                n1: 10,
-                n2: 5
+                site: 'https://google.com',
+                cor: 'rosa',
+                instrucaoDePreenchimento: 'Placeholder - Diretiva v-bind',
+                valor: 'Entendendo a diretiva v-bind',
+                check: true
             },
-            methods: {
-                somar: function somar() { // sintaxe convencional (função nomeada)
-                    return this.n1 + this.n2;
-                },
-                subtrair: function(){ // função anônima
-                    return this.n1 - this.n2;
-                },
-                multiplicar: () => { // arrow function
-                    return this.n1 * this.n2;
-                },
-                dividir() { // método abreviado
-                    return this.n1 / this.n2;;
-                }
-            } 
+            methods: {} 
         }); 
     </script>
 </body>
