@@ -9,30 +9,35 @@
 
     <style>
         .rosa {
-            color: palevioletred;
+            background-color: palevioletred;
+        }
+
+        .azul{
+            background-color: blue;
         }
     </style>
 
 </head>
 <body>
     <div id="app">
-        <a :href="site">Site</a>
-        <p v-bind:class="cor">Entendendo a diretiva v-bind</p>
-        <input type="text" v-bind:placeholder="instrucaoDePreenchimento" v-bind:value="valor">
-        <input type="checkbox" v-bind:checked="check">
+        <input type="text" @keyup="imprimirTexto">
+        <button @click="mensagemAlerta">Botão</button>
     </div> 
 
     <script>
         const vm = new Vue({
             el:'#app', 
             data: {
-                site: 'https://google.com',
-                cor: 'rosa',
-                instrucaoDePreenchimento: 'Placeholder - Diretiva v-bind',
-                valor: 'Entendendo a diretiva v-bind',
-                check: true
+
             },
-            methods: {} 
+            methods: {
+                imprimirTexto() {
+                    console.log('Teste');
+                },
+                mensagemAlerta() {
+                    alert('Mensagem de Alerta!');
+                }
+            } 
         }); 
     </script>
 </body>
